@@ -18,10 +18,10 @@ module "ec2_instance" {
 
 
 resource "aws_security_group" "cluster" {
-  name        = "allow_ekctl"
+  name        = "cluster"
   description = "created for ekctl"
   tags = {
-    Name = "allow_ekctl"
+    Name = "cluster"
   }
   ingress {
     description = "all ports"
