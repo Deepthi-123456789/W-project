@@ -1,0 +1,10 @@
+api-version : v1
+kind : cluster
+metadata:
+  name: my-cluster
+managedNodeGroups:
+  name: spot
+  desiredCapacity: 1
+  instanceType: t2.micro
+  spot: true
+
