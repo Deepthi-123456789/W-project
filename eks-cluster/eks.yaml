@@ -4,8 +4,8 @@ metadata:
   name: my-cluster
   region: us-east-1
 managedNodeGroups:
-  name: spot
-  desiredCapacity: 1
-  instanceType: t2.micro
-  spot: true
+  - name: spot
+    desiredCapacity: 1
+    instanceType: t2.micro
+    spot: true
 
